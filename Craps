@@ -88,6 +88,6 @@ public class Craps
                 return false;
             else System.out.println("\nIncorrect Response\nThe Correct Responses are yes, or no");
         } while (answer.compareToIgnoreCase("yes")!=0 && answer.compareToIgnoreCase("no")!=0);
-        
+        return false;
     }
 }
