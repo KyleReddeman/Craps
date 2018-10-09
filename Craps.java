@@ -75,18 +75,23 @@ public class Craps
             }
         }           
     }
-    public static boolean playAgain() {
-        String answer;
-        do
-        {
-            System.out.println("\nWould you like to play again?");
-            answer=input.nextLine();
-            if (answer.compareToIgnoreCase("yes")==0)
-                return true;
-            if (answer.compareToIgnoreCase("no")==0)
-                return false;
-            else System.out.println("\nIncorrect Response\nThe Correct Responses are yes, or no");
-        } while (answer.compareToIgnoreCase("yes")!=0 && answer.compareToIgnoreCase("no")!=0);
-        return false;
+    public static boolean playAgain()
+    {
+      System.out.println("\nWould you like to play again?");
+      String answer = input.nextLine();
+      return answer.compareToIgnoreCase("yes") == 0;
+// 
+//         String answer;
+//         do
+//         {
+//             System.out.println("\nWould you like to play again?");
+//             answer=input.nextLine();
+//             if (answer.compareToIgnoreCase("yes")==0)
+//                 return true;
+//             if (answer.compareToIgnoreCase("no")==0)
+//                 return false;
+//             else System.out.println("\nIncorrect Response\nThe Correct Responses are yes, or no");
+//         } while (answer.compareToIgnoreCase("yes")!=0 && answer.compareToIgnoreCase("no")!=0);
+//         return false;
     }
 }
